@@ -9,7 +9,7 @@ export default function HeroSection() {
   const [reservation, setReservation] = useState(false);
 
   return (
-    <section className="flex flex-col lg:flex-row rounded-[50px] border-7 border-white/80 overflow-hidden m-6">
+    <section className="flex flex-col rounded-[50px] border-7 border-white/80 overflow-hidden m-6 lg:flex-row">
       {/* Sisi Kiri */}
       <div className="bg-white/80 text-white py-10 px-0 lg:px-8 flex-1">
         <h1 className="text-6xl font-bold mb-4 text-black">
@@ -17,7 +17,7 @@ export default function HeroSection() {
         </h1>
         <p className="text-black/80 mb-4 text-2xl">Let's Get Acquainted</p>
         <div className="flex items-center justify-between mt-10">
-          <p className="text-black">
+          <p className="text-black text-lg">
             Forklik Cafe and Billiard, ruang santai untuk <br /> kumpul positif
             bareng teman, Solusi mengisi <br /> hari kosong anda
           </p>
@@ -44,11 +44,6 @@ export default function HeroSection() {
         }`}
       >
         {reservation === true && (
-          // <div
-          //   className={`space-y-5 transition-opacity duration-700 ${
-          //     reservation ? "opacity-100" : "opacity-0 pointer-events-none"
-          //   }`}
-          // >
           <div className="space-y-5">
             <h2 className="text-3xl font-bold text-black mb-4">
               Reservation Form

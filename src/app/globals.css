@@ -19,7 +19,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  /* --background: linear-gradient(to top, #1e40af, #6366f1, #db2777); */
+  --background: oklch(0.922 0 0);
   --foreground: oklch(0.145 0 0);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
@@ -36,9 +37,7 @@
 
 /* === Base Layer === */
 @layer base {
-  *,
-  ::before,
-  ::after {
+  *, ::before, ::after {
     box-sizing: border-box;
     @apply border-border outline-ring/50;
   }
@@ -46,8 +45,8 @@
   html, body {
     margin: 0;
     padding: 0;
-    @apply bg-background text-foreground font-sans antialiased;
-    @apply scroll-smooth;
+    background: var(--background);
+    @apply text-foreground font-sans antialiased scroll-smooth;
   }
 
   a {
