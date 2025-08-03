@@ -77,7 +77,7 @@ export default function FirstSection() {
             </span>{" "}
             Your <br /> Ideal Holiday
           </h1>
-          <p className="text-white/80 mb-4 text-2xl">Let's Get Acquainted</p>
+          <p className="text-white/80 mb-4 text-2xl">Let&apos;s Get Acquainted</p>
           <div className="space-y-3">
             <p className="text-white text-lg">
               Forklik Cafe and Billiard, ruang santai untuk <br /> kumpul

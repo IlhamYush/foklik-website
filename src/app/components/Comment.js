@@ -22,7 +22,7 @@ export default function Comment() {
 "
           >
             <p className="text-white font-semibold line-clamp-3 p-10">
-              "Gw main sama ortu disini dan mereka suka! bakalan balik lagi sih"
+              &quot;Gw main sama ortu disini dan mereka suka! bakalan balik lagi sih&quot;
             </p>
 
             <div className="flex items-center p-5 ml-5 mb-2">
@@ -42,8 +42,8 @@ export default function Comment() {
 "
           >
             <p className="text-white font-semibold line-clamp-3 p-10">
-              "Sering sering ada tournamen biliar nya dong, seru banget
-              main disini!"
+              &quot;Sering sering ada tournamen biliar nya dong, seru banget
+              main disini!&quot;
             </p>
 
             <div className="flex items-center p-5 ml-5 mb-2">
@@ -63,7 +63,7 @@ export default function Comment() {
 "
           >
             <p className="text-white font-semibold line-clamp-3 p-10">
-              "Tempat nya cozy, bersih, dan pelayanan nya ramah. Mantap!"
+              &quot;Tempat nya cozy, bersih, dan pelayanan nya ramah. Mantap!&quot;
             </p>
             <div className="flex items-center p-5 ml-5 mb-2">
               <img
@@ -81,8 +81,8 @@ export default function Comment() {
             className="rounded-[20px] h-50 flex flex-col justify-between bg-[radial-gradient(circle_at_center,_#0077B2,_#54ADD0)]"
           >
             <p className="text-white font-semibold line-clamp-3 p-10">
-              Service nya top sih! ambience nya bagus, cocok deh buat ngechill
-              disini
+              &quot;Service nya top sih! ambience nya bagus, cocok deh buat ngechill
+              disini&quot;
             </p>
 
             <div className="flex items-center p-5 ml-5 mb-2">

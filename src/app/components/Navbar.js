@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <a href="/" className={`flex items-center mt-4 ${textColor}`}>
+              <Link href="/" className={`flex items-center mt-4 ${textColor}`}>
                 <img
                   src="/assets/logoFooter.png"
                   alt="logoCafe"
@@ -24,7 +24,7 @@ export default function Navbar() {
                   height={150}
                   className="object-contain"
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hidden md:block mt-2">
