@@ -1,10 +1,4 @@
 import React from "react";
-import Image from "next/image";
-
-import img1 from "../assets/ArticleList1.png";
-import img2 from "../assets/ArticleList2.png";
-import img3 from "../assets/ArticleList3.png";
-import img4 from "../assets/ArticleList4.png";
 
 export default function ArticleList() {
   return (
@@ -12,10 +6,10 @@ export default function ArticleList() {
       <div className="grid grid-cols-2 gap-4 p-10">
         <div className="row-span-2">
           <div className="relative w-full h-[700px] rounded-[20px] overflow-hidden">
-            <Image
-              src={img1}
+            <img
+              src="/assets/ArticleList1.png"
               alt="Image-1"
-              fill
+              
               className="object-cover rounded-[20px]"
             />
           </div>
@@ -26,10 +20,10 @@ export default function ArticleList() {
           </p>
 
           <div className="relative w-full h-[295px] rounded-[20px] overflow-hidden mt-2">
-            <Image
-              src={img2}
+            <img
+              src="/assets/ArticleList2.png"
               alt="Image-2"
-              fill
+              
               className="object-cover rounded-[20px]"
             />
           </div>
@@ -43,10 +37,10 @@ export default function ArticleList() {
               Pukulan
             </p>
             <div className="relative w-full h-[300px] rounded-[20px] overflow-hidden mt-2">
-              <Image
-                src={img3}
+              <img
+                src="/assets/ArticleList2.png"
                 alt="Image-3"
-                fill
+                
                 className="object-cover rounded-[20px]"
               />
             </div>
@@ -59,10 +53,10 @@ export default function ArticleList() {
               di Forklik!
             </p>
             <div className="relative w-full h-[600px] rounded-[20px] overflow-hidden mt-2">
-              <Image
-                src={img4}
+              <img
+                src="/assets/ArticleList4.png"
                 alt="Image-4"
-                fill
+                
                 className="object-cover rounded-[20px]"
               />
             </div>

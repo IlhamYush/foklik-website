@@ -1,16 +1,10 @@
 import React from "react";
-import Image from "next/image";
-
-import learn1 from "../assets/bg2.png";
-import learn2 from "../assets/bg2.png";
-import learn3 from "../assets/bg2.png";
-import learn4 from "../assets/bg2.png";
 
 const images = [
-  { src: learn1, alt: "learn1" },
-  { src: learn2, alt: "learn2" },
-  { src: learn3, alt: "learn3" },
-  { src: learn4, alt: "learn4" },
+  { src: "/assets/learn1.png", alt: "learn1" },
+  { src: "/assets/learn2.png", alt: "learn2" },
+  { src: "/assets/learn3.png", alt: "learn3" },
+  { src: "/assets/learn4.png", alt: "learn4" },
 ];
 
 const sections = [
@@ -44,23 +38,24 @@ const sections = [
 
 export default function LearntoUs() {
   return (
-    <div className="py-10 space-y-10">
+    <div className="py-30 space-y-10">
       <div className="flex justify-center gap-10 flex-wrap">
         {images.map((img, index) => (
           <div
             key={index}
             className="relative w-[270px] h-[270px] rounded-[10px] overflow-hidden"
           >
-            <Image
+            <img
               src={img.src}
               alt={img.alt}
               className="object-cover rounded-[10px]"
+              
             />
           </div>
         ))}
       </div>
 
-      <h2 className="text-4xl text-white font-bold text-center">
+      <h2 className="text-5xl text-white font-bold text-center py-10">
         Learn To Play With Us
       </h2>
 

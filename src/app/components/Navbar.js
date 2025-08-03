@@ -1,11 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-import logo1 from "../assets/logoFooter.png";
 
 
 export default function Navbar() {
@@ -20,8 +17,8 @@ export default function Navbar() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <a href="/" className={`flex items-center mt-4 ${textColor}`}>
-                <Image
-                  src={logo1}
+                <img
+                  src="/assets/logoFooter.png"
                   alt="logoCafe"
                   width={150}
                   height={150}

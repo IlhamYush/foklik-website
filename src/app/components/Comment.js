@@ -1,20 +1,12 @@
 import React from "react";
-import Image from "next/image";
-
-import profil1 from "../assets/person1.jpeg";
-import profil2 from "../assets/person2.png";
-import profil3 from "../assets/person3.jpg";
-import profil4 from "../assets/person4.png";
-
-import gambar2 from "../assets/bola1.png";
 
 export default function Comment() {
   return (
     <div className="relative">
       {" "}
       <div className="absolute top-0 right-20 -mt-10 z-20">
-        <Image
-          src={gambar2}
+        <img
+          src="/assets/bola1.png"
           alt="Background Image"
           className="w-[130px] object-cover"
         />
@@ -34,8 +26,8 @@ export default function Comment() {
             </p>
 
             <div className="flex items-center p-5 ml-5 mb-2">
-              <Image
-                src={profil1}
+              <img
+                src="/assets/person1.jpeg"
                 alt="User Avatar"
                 className="rounded-full"
                 width={40}
@@ -55,8 +47,8 @@ export default function Comment() {
             </p>
 
             <div className="flex items-center p-5 ml-5 mb-2">
-              <Image
-                src={profil4}
+              <img
+                src="/assets/person4.png"
                 alt="User Avatar"
                 className="rounded-full"
                 width={40}
@@ -74,8 +66,8 @@ export default function Comment() {
               "Tempat nya cozy, bersih, dan pelayanan nya ramah. Mantap!"
             </p>
             <div className="flex items-center p-5 ml-5 mb-2">
-              <Image
-                src={profil3}
+              <img
+                src="/assets/person3.jpg"
                 alt="User Avatar"
                 className="rounded-full"
                 width={40}
@@ -94,8 +86,8 @@ export default function Comment() {
             </p>
 
             <div className="flex items-center p-5 ml-5 mb-2">
-              <Image
-                src={profil2}
+              <img
+                src="/assets/person2.png"
                 alt="User Avatar"
                 className="rounded-full"
                 width={40}

@@ -1,10 +1,6 @@
 import React from "react";
 import ScrollWrapper from "../components/ScrollWrapper";
 import Navbar from "../components/Navbar";
-
-import Image from "next/image";
-import about1 from "../assets/bg1.png";
-
 import Footer from "../components/Footer";
 
 export default function About() {
@@ -26,9 +22,9 @@ export default function About() {
                   Forklik adalah tempat nongkrong seru yang menggabungkan
                   sensasi kuliner, hiburan, dan suasana santai dalam satu ruang.
                   Berlokasi di Bandung dan dikelilingi oleh kampus-kampus
-                  ternama, Forklik hadir untuk jadi “rumah kedua” bagi
-                  mahasiswa, komunitas, dan siapa pun yang butuh tempat nyaman
-                  untuk melepas penat, ngobrol, atau seru-seruan bareng.
+                  ternama, Forklik hadir untuk jadi rumah kedua bagi mahasiswa,
+                  komunitas, dan siapa pun yang butuh tempat nyaman untuk
+                  melepas penat, ngobrol, atau seru-seruan bareng.
                 </p>
                 <p>
                   Kami percaya bahwa nongkrong bukan hanya soal makanan dan
@@ -51,15 +47,18 @@ export default function About() {
                 </p>
               </div>
             </section>
-            
+
             <div className="flex justify-center">
               <div className="w-[900px] h-[400px] rounded-[20px] overflow-hidden mt-10 relative">
-                <Image
-                  src={about1}
-                  alt="About Forklik"
-                  fill
-                  className="object-cover rounded-[20px]"
-                />
+                <video
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  style={{width: "900px", height: "400px"}}
+                >
+                  <source src="/videos/aboutvideo.mp4" />
+                </video>
               </div>
             </div>
           </div>

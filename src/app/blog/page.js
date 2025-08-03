@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import Navbar from "../components/Navbar";
 import ScrollWrapper from "../components/ScrollWrapper";
@@ -10,7 +9,7 @@ export default function Blog() {
   return (
     <ScrollWrapper>
       <main>
-        <div className="bg-gradient-to-b from-[#113F67] via-[#04408D] to-black">
+        <div className="bg-gradient-to-b from-black/90 via-[#04408D] to-black">
           <div className="relative z-10 mx-13 p-5 -mb-1">
             <Navbar />
             <div className="flex flex-col md:flex-row overflow-hidden gap-6 mt-10 w-[100vh]">
@@ -32,14 +31,6 @@ export default function Blog() {
                 </p>
               </div>
             </div>
-
-            {/* <div className="flex justify-center p-15 mt-20">
-              <Image
-                src={group1}
-                alt="group1"
-                className="object-cover w-full"
-              />
-            </div> */}
 
             <ArticleList />
           </div>

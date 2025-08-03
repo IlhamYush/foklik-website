@@ -1,10 +1,6 @@
 import React from "react";
 
-import Image from "next/image";
-import logoFooter from "../assets/logoFooter.png";
 import { MapPin, Instagram, Phone, Sparkles, Clock } from "lucide-react";
-
-import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
@@ -13,7 +9,7 @@ export default function Footer() {
       <div className="relative z-20 max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row justify-between items-start gap-10 text-white">
         <div className="flex flex-col items-start mt-15">
           <div className="flex items-center gap-2">
-            <Image src={logoFooter} alt="logo" width={300} height={300} />
+            <img src="/assets/logoFooter.png" alt="logo" width={300} height={300} />
           </div>
         </div>
 

@@ -1,23 +1,15 @@
 import React from "react";
-import Image from "next/image";
-
-import gambar1 from "../assets/thirdsection4.png";
-import gambar2 from "../assets/bola2.png";
-
-import third1 from "../assets/thirdsection1.jpg"
-import third2 from "../assets/thirdsection2.png"
-import third3 from "../assets/thirdsection3.jpg"
 
 export default function ThirdSection() {
   return (
     <div>
       <div className="flex flex-col py-20 lg:flex-row space-x-9">
         <div className="relative w-[400px] h-[500px] rounded-[20px] overflow-hidden">
-          <Image
-            src={gambar1}
+          <img
+            src="/assets/thirdsection4.png"
             alt="Background Image-1"
             className="object-cover rounded-[20px]"
-            fill
+            
           />
         </div>
 
@@ -52,11 +44,11 @@ export default function ThirdSection() {
           ></div>
           <div className="relative ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
             <div className="relative w-[345px] h-[200px] rounded-[20px] overflow-hidden">
-              <Image
-                src={third1}
+              <img
+                src="/assets/thirdsection1.jpg"
                 alt="Overlap Image"
                 className="object-cover rounded-[20px]"
-                fill
+                
               />
             </div>
           </div>
@@ -69,11 +61,11 @@ export default function ThirdSection() {
           ></div>
           <div className="relative ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
             <div className="relative w-[355px] h-[200px] rounded-[20px] overflow-hidden">
-              <Image
-                src={third2}
+              <img
+                src="/assets/thirdsection2.png"
                 alt="Overlap Image"
                 className="object-cover rounded-[20px]"
-                fill
+                
               />
             </div>
           </div>
@@ -85,20 +77,20 @@ export default function ThirdSection() {
                       rounded-[30px] blur opacity-25 group-hover:opacity-100 transition duration-500"
           ></div>
           <div className="relative ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
-            <div className="relative w-[300px] h-[200px] rounded-[20px] overflow-hidden">
-              <Image
-                src={third3}
+            <div className="relative w-[350px] h-[200px] rounded-[20px] overflow-hidden">
+              <img
+                src="/assets/thirdsection3.jpg"
                 alt="Overlap Image"
                 className="object-cover rounded-[20px]"
-                fill
+                
               />
             </div>
           </div>
         </div>
       </div>
       <div className="z-20 -mt-40 -mr-20 flex justify-end">
-        <Image
-          src={gambar2}
+        <img
+          src="/assets/bola2.png"
           alt="Bola2"
           className="w-[200px] object-cover"
         />

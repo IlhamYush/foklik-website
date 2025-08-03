@@ -1,7 +1,4 @@
 import React from "react";
-import Image from "next/image";
-
-import galeri1 from "../assets/ArticleList1.png";
 
 export default function Gallery() {
   return (
@@ -26,8 +23,8 @@ export default function Gallery() {
       </div>
 
       <div className="relative w-full h-[600px] mt-10 overflow-hidden rounded-[20px]">
-        <Image
-          src={galeri1}
+        <img
+          src="/assets/ArticleList1.png"
           alt="Gallery Image 1"
           fill
           className="object-cover rounded-[20px]"
