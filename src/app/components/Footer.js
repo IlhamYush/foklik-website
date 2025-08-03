@@ -1,22 +1,14 @@
 import React from "react";
 
 import Image from "next/image";
-import bgFooter from "../assets/bola8.png";
 import logoFooter from "../assets/logoFooter.png";
 import { MapPin, Instagram, Phone, Sparkles, Clock } from "lucide-react";
 
+import { Input } from "@/components/ui/input";
+
 export default function Footer() {
   return (
-    <footer className="relative w-full h-[400px] mt-20">
-      {/* Background Image */}
-      <Image
-        src={bgFooter}
-        alt="footer background"
-        fill
-        className="object-cover z-0"
-      />
-      <div className="absolute inset-0 bg-black/50 z-10"></div>
-
+    <footer className="relative w-full h-[400px] bg-black">
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row justify-between items-start gap-10 text-white">
         <div className="flex flex-col items-start mt-15">
@@ -70,7 +62,56 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 bg-white/50 z-10"></div>
     </footer>
   );
+}
+
+{
+  /* 
+      <div className="flex-1 px-3 flex flex-col transition-all duration-300py-8 justify-center items-center gap-4">
+        <div className="space-y-5">
+          <h2 className="text-3xl font-bold text-black mb-4">
+            Reservation Form
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex flex-col gap-2">
+              <p className="text-black">First Name</p>
+              <Input
+                type="text"
+                placeholder="Enter your first name"
+                className="placeholder-black text-black w-full border-none bg-white"
+              />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <p className="text-black">Last Name</p>
+              <Input
+                type="text"
+                placeholder="Enter your last name"
+                className="placeholder-black text-black w-full border-none bg-white"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-black">Email</p>
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              className="placeholder-black text-black w-full border-none bg-white"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-black">Your Messages</p>
+            <Input
+              type="text"
+              placeholder="Enter your messages"
+              className="placeholder-black text-black w-full border-none bg-white"
+            />
+            <button className="bg-black text-white px-6 py-2 rounded-md w-full mt-4 hover:bg-gray-800 transition-colors duration-300">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div> */
 }

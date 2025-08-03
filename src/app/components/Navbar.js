@@ -11,7 +11,7 @@ import logo1 from "../assets/logoFooter.png";
 export default function Navbar() {
   const pathname = usePathname();
 
-  const textColor = pathname === "/" ? "text-white hover:text-white/50 transition-colors duration-300" : "text-black hover:text-black/80 transition-colors duration-300";
+  const textColor = pathname === "/" ? "text-white hover:text-white/50 transition-colors duration-300" : "text-white hover:text-white/50 transition-colors duration-300";
 
   return (
     <nav>
@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <a href="/" className={`flex items-center mt-2 ${textColor}`}>
+              <a href="/" className={`flex items-center mt-4 ${textColor}`}>
                 <Image
                   src={logo1}
                   alt="logoCafe"
@@ -34,19 +34,19 @@ export default function Navbar() {
             <div className="ml-4 flex items-center space-x-1">
               <Link
                 href="/about"
-                className={`font-bold hover:text-white/80 transition-colors duration-300 px-3 py-1 ${textColor}`}
+                className={`text-lg font-bold hover:text-white/80 transition-colors duration-300 px-3 py-1 ${textColor}`}
               >
                 About us
               </Link>
               <Link
                 href="/blog"
-                className={`font-bold hover:text-white/80 transition-colors duration-300 px-3 py-1 ${textColor}`}
+                className={`text-lg font-bold hover:text-white/80 transition-colors duration-300 px-3 py-1 ${textColor}`}
               >
                 Blog
               </Link>
               <Link
                 href="/facility"
-                className={`font-bold px-3 py-1 mr-5 ${textColor}`}
+                className={`text-lg font-bold px-3 py-1 mr-5 ${textColor}`}
               >
                 Facility
               </Link>

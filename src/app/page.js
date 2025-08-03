@@ -1,142 +1,56 @@
 import React from "react";
 import Image from "next/image";
 
-import gambar1 from "../app/assets/buahGelas.png";
-import background1 from "../app/assets/bg2.png";
-import artikel1 from "../app/assets/bola8.png";
+import Komponen2 from "../app/assets/Layer_1.png";
+import bgSalsa from "../app/assets/bgSalsa.png";
 
-import HeroSection from "./components/HeroSection";
+import FirstSection from "./components/FirstSection";
 import Navbar from "./components/Navbar";
-import SecondSection from "./components/SecondSection";
+import ThirdSection from "./components/ThirdSection";
 import Comment from "./components/Comment";
 import Footer from "./components/Footer";
 import ScrollWrapper from "./components/ScrollWrapper";
+import SecondSection from "./components/SecondSection";
 
 export default function Home() {
   return (
     <ScrollWrapper>
       <main className="scroll-smooth">
-        <div
-          className="relative bg-cover bg-center py-3"
-          style={{ backgroundImage: `url(${background1.src})` }}
-        >
-          <div className="absolute inset-0 bg-black/30 z-0"></div>
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-b from-[#002046] via-[#000E1F] to-black overflow-hidden">
+          <div className="absolute inset-0 z-0 w-full">
+            <Image src={bgSalsa} alt="bgSalsa" className="object-cover" />
+          </div>
+          <div className="relative z-10 mx-10 px-4 py-5 sm:px-6 lg:px-8">
             <Navbar />
-            <HeroSection />
           </div>
-        </div>
 
-        <div className="max-w-7xl mx-auto px-6 mt-20 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 mx-auto sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <div className="flex flex-col">
-              <div className="overflow-hidden rounded-md w-[352px] h-[300px]">
-                <Image
-                  src={gambar1}
-                  alt="gambar3"
-                  className="rounded-md object-cover"
-                />
-              </div>
-              <p className="mt-4 text-black font-semibold">Memories</p>
-              <p className="text-gray-500 text-sm">
-                Body text for whatever you'd like to add more to the subheading.
-              </p>
-            </div>
+          <div className="px-10 relative z-10 py-20">
+            {/* Section Pertama */}
+            <FirstSection />
 
-            <div className="flex flex-col">
-              <div className="overflow-hidden rounded-md w-[352px] h-[300px]">
-                <Image
-                  src={gambar1}
-                  alt="gambar3"
-                  className="rounded-md object-cover"
-                />
-              </div>
-              <p className="mt-4 text-black font-semibold">Event Bulanan</p>
-              <p className="text-gray-500 text-sm">
-                Body text for whatever you'd like to expand on the main point.
-              </p>
-            </div>
-
-            <div className="flex flex-col">
-              <div className="overflow-hidden rounded-md w-[352px] h-[300px]">
-                <Image
-                  src={gambar1}
-                  alt="gambar3"
-                  className="rounded-md object-cover"
-                />
-              </div>
-              <p className="mt-4 text-black font-semibold">Pengabdian</p>
-              <p className="text-gray-500 text-sm">
-                Body text for whatever you'd like to share more.
-              </p>
+            <div className="absolute top-7 right-0 z-0">
+              <Image
+                src={Komponen2}
+                alt="Komponen 2"
+                className="py-40 w-[450px] object-cover"
+              />
             </div>
           </div>
 
-          {/* Memories DLL */}
-          <div className="mt-20">
+          <div className="px-15 relative z-10">
+            {/* Section Kedua */}
             <SecondSection />
-          </div>
 
-          {/* Artikel */}
-          <div className="mt-20">
-            <h2 className="font-semibold text-black text-4xl">Article</h2>
-          </div>
-          <div className="grid grid-cols-2 gap-40 mt-10">
-            {/* Kartu 1 */}
-            <div className="flex flex-col items-start gap-4">
-              <div className="relative w-full h-[300px] rounded-md overflow-hidden group">
-                <Image
-                  src={background1}
-                  alt="Artikel 1"
-                  className="rounded-md object-cover w-full h-full"
-                />
+            {/* Section Ketiga */}
+            <ThirdSection />
 
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-xl font-semibold">Open</span>
-                </div>
-              </div>
-
-              <div>
-                <h2 className="text-black font-semibold text-2xl mb-2">
-                  Sub Heading Artikel 1
-                </h2>
-                <p className="text-black">
-                  Body text for whatever you'd like to add more to the
-                  subheading.
-                </p>
-              </div>
-            </div>
-
-            {/* Kartu 2 */}
-            <div className="flex flex-col items-start gap-4">
-              <div className="relative w-full h-[300px] rounded-md overflow-hidden group">
-                <Image
-                  src={artikel1}
-                  alt="Artikel 1"
-                  className="rounded-md object-cover w-full h-full"
-                />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-xl font-semibold">Open</span>
-                </div>
-              </div>
-              <div>
-                <h2 className="text-black font-semibold text-2xl mb-2">
-                  Sub Heading Artikel 2
-                </h2>
-                <p className="text-black">
-                  Body text for whatever you'd like to add more to the
-                  subheading.
-                </p>
-              </div>
+            {/* Comment */}
+            <div className="py-15">
+              <Comment />
             </div>
           </div>
-
-          {/* Comment */}
-          <div className="mt-20">
-            <Comment />
-          </div>
+          <Footer />
         </div>
-        <Footer />
       </main>
     </ScrollWrapper>
   );

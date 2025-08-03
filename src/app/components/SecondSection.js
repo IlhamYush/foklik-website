@@ -1,50 +1,39 @@
 import React from "react";
 import Image from "next/image";
-import gambar13 from "../assets/bola8.png";
+
+import gambar1 from "../assets/foto1.jpg";
+import gambar2 from "../assets/foto2.jpg";
+import gambar3 from "../assets/foto3.png";
 
 export default function SecondSection() {
+  const cards = [
+    { id: 1, image: gambar1, title: "Lights & Lines" },
+    { id: 2, image: gambar2, title: "Ready to Break" },
+    { id: 3, image: gambar3, title: "Billiard Lounge" },
+  ];
+
   return (
-    <section className="py-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-          <div className="flex-1 space-y-8">
-            <div>
-              <h2 className="text-lg font-bold text-black mb-2">Subheading</h2>
-              <p className="text-gray-600">
-                Tempat terbaik bukan hanya soal menu atau dekorasi—tapi soal
-                rasa nyaman dan koneksi yang tercipta. Forklik menghadirkan
-                keduanya dalam satu ruang.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-lg font-bold text-black mb-2">Subheading</h2>
-              <p className="text-gray-600">
-                Forklik tidak hanya jadi tempat santai, tapi juga ruang untuk
-                ide-ide tumbuh. Dari tugas kuliah, brainstorming, hingga diskusi
-                komunitas, semua punya tempatnya di sini.
-              </p>
-            </div>
-
-            <div className="flex gap-4">
-              <button className="bg-black text-white px-6 py-2 rounded">
-                Button
-              </button>
-              <button className="bg-gray-200 text-black px-6 py-2 rounded">
-                Secondary button
-              </button>
-            </div>
-          </div>
-
-          <div className="flex-1 flex justify-end">
+    <section className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-5 w-[130vh]">
+      {cards.map((card) => (
+        <div
+          key={card.id}
+          className="p-3 bg-gradient-to-tl from-blue-950 via-gray-900 to-blue-950 rounded-[20px]"
+        >
+          <div className="relative group w-full h-[300px] rounded-[10px] overflow-hidden cursor-pointer">
             <Image
-              src={gambar13}
-              alt="gambar13"
-              width={560}
-              height={584}
-              className="rounded object-cover"
+              src={card.image}
+              alt={card.title}
+              className="object-cover group-hover:scale-105 transition-transform duration-400"
+              fill
             />
+            <div className="bg-gradient-to-l from-blue-950 via-gray-900 to-blue-950 absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-400">
+              <p className="text-white text-lg font-bold text-center">
+                {card.title}
+              </p>
+            </div>
           </div>
         </div>
+      ))}
     </section>
   );
 }
